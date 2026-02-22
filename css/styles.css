@@ -192,3 +192,101 @@ h1, h2 {
     background-color: #ffffff;
     color: #0a0a0a;
 }
+
+.modal-base {
+    margin: auto;
+    width: 90vw;
+    max-width: 1200px;
+    height: 90vh;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 2rem;
+}
+
+.modal-base::backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 1rem;
+}
+
+.manga-titulo-peq {
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.btn-cerrar {
+    background: none;
+    border: none;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.grid-modal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    overflow-y: auto;
+    max-height: calc(90vh - 120px);
+    padding-right: 10px;
+}
+
+.grid-modal img {
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.grid-modal img:hover { transform: scale(1.05); }
+
+
+#modal-lightbox {
+    padding: 0;
+    border: none;
+    background: transparent;
+    overflow: hidden;
+    margin: auto;
+}
+
+#modal-lightbox[open] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-lightbox::backdrop {
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: zoom-out;
+}
+
+#modal-lightbox img {
+    display: block;
+    max-width: 90vw !important;
+    max-height: 90vh !important;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+@media (max-width: 768px) {
+    .manga-panel { flex-direction: column; height: auto; }
+    .manga-texto, .manga-visual { width: 100%; }
+    .manga-visual img { height: 50vh; object-position: center !important; }
+    .espejo { transform: none; }
+}

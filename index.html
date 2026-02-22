@@ -69,6 +69,18 @@
 
     </main>
 
+    <dialog id="modal-galeria" class="modal-base">
+        <div class="modal-header">
+            <h3 id="modal-titulo" class="manga-titulo-peq">Cargando...</h3>
+            <button onclick="cerrarGaleria()" class="btn-cerrar">✕ CERRAR</button>
+        </div>
+        <div id="modal-contenido"></div>
+    </dialog>
+
+    <dialog id="modal-lightbox" onclick="cerrarLightbox(event)">
+        <img id="lightbox-img" src="" alt="Portada en grande">
+    </dialog>
+
     <script src="js/script.js"></script>
 </body>
 </html>
