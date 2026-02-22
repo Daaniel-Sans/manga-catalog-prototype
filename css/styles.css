@@ -169,3 +169,26 @@ h1, h2 {
     mix-blend-mode: multiply;
     opacity: 0.95; 
 }
+
+.btn-explorar {
+    background-color: transparent;
+    color: currentColor;
+    border: 1px solid currentColor;
+    padding: 0.8rem 1.5rem;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.claro .btn-explorar:hover {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+.oscuro .btn-explorar:hover {
+    background-color: #ffffff;
+    color: #0a0a0a;
+}
