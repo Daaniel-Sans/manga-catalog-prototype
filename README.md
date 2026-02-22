@@ -9,7 +9,6 @@
 
 ## ✨ Características
 
-- **Diseño Editorial:** Estética inspirada en revistas de manga con tipografía *Anton* para títulos de gran impacto.
 - **Galería Dinámica:** Sistema de carga de portadas mediante archivos de datos externos.
 - **Optimización con Cloudinary:** Las imágenes se transforman automáticamente mediante URL (`f_auto, q_auto`) para mejorar los tiempos de carga.
 - **Modales Nativos:** Uso de la API `<dialog>` de HTML5 para una navegación limpia y accesible.
