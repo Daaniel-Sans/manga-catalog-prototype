@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mg:coleccion 
+    xmlns:mg="http://www.ejemplo.com/manga" 
+    xmlns:info="http://www.ejemplo.com/informacion">
+
+    <mg:manga>
+        <info:autor>George Morikawa</info:autor>
+        <info:nombre>Hajime no Ippo</info:nombre>
+        <info:descripcion>Una historia de superación y sacrificio a través del boxeo</info:descripcion>
+        <info:genero>Deportes</info:genero>
+        <info:tomos>145</info:tomos>
+        <info:fechaPublicacion>1989</info:fechaPublicacion>
+    </mg:manga>
+
+    <mg:manga>
+        <info:autor>Takehiko Inoue</info:autor>
+        <info:nombre>Vagabond</info:nombre>
+        <info:descripcion>Narra la vida y evolución espiritual del legendario espadachín Musashi Miyamoto tras la batalla de Sekigahara.</info:descripcion>
+        <info:genero>Aventura</info:genero>
+        <info:tomos>37</info:tomos>
+        <info:fechaPublicacion>1998</info:fechaPublicacion>
+    </mg:manga>
+</mg:coleccion>
